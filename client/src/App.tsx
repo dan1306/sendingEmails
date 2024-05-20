@@ -55,7 +55,8 @@ function App() {
                 }}
               style={{
                 width: "100%",
-                height: "90%"
+                height: "90%",
+                border: "2px solid #d8dadc" /* border width, border style, border color */
               }}
               />
             </div>
@@ -79,7 +80,9 @@ function App() {
                 }}
                 style={{
                   width: "100%",
-                  height: "90%"
+                  height: "90%",
+                  border: "2px solid #d8dadc" /* border width, border style, border color */
+
                 }}
               />
              </div>
@@ -107,7 +110,8 @@ function App() {
                   width: "100%",
                   maxWidth: "100%",
                   height: "100%",
-                  maxHeight: "100%"
+                  maxHeight: "100%",
+                  border: "2px solid #d8dadc" /* border width, border style, border color */
                 }}
               >
                 Enter text here...
@@ -122,11 +126,10 @@ function App() {
           }}>
             <input type="submit"
             value="Submit"
-            style={{
-              width: "100%",
-              margin: "8px 0 0 3px",
-              height: "100%"
-            }}
+            className="submit-button" 
+            // style={{
+             
+            // }}
           />         
         </div>
           </form>
