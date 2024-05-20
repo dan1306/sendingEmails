@@ -35,7 +35,14 @@ function App() {
 
       <form onSubmit={handleSendEmail}>
         <div>
-          <label>Email:
+          <div style={{
+            // display: 'inline-block',
+            // width: '100vw'
+          }}>Email Address: </div>
+          <div style={{
+            height: "3vh",
+            margin: "5px 0"
+          }}>
               <input
                 placeholder="Enter Recipient Email"
                 type="email"
@@ -46,11 +53,20 @@ function App() {
                   setEmail(value)
                   console.log("email: ", email )
                 }}
+              style={{
+                width: "100%",
+                height: "90%"
+              }}
               />
-          </label>
+            </div>
         </div>
         <div>
-            <label>Subject:
+          <div>Subject:
+          </div>   
+          <div style={{
+            height: "3vh",
+            margin: "5px 0"
+          }}>
               <input
                 placeholder="Enter the subject"
                 type="text"
@@ -61,12 +77,21 @@ function App() {
                   setSubject(value)
                   console.log("subject: ", subject )
                 }}
+                style={{
+                  width: "100%",
+                  height: "90%"
+                }}
               />
-          </label>      
+             </div>
         </div>
         <div>
 
-            <label >Message:
+            <div > Message: </div>
+          <div style={{
+            height: "25vh",
+            // maxHeight: "45vh",
+            margin: "5px 0"
+          }} >
               <textarea
                 placeholder="Your message goes here"
                 name="message"
@@ -78,14 +103,30 @@ function App() {
                   setMessage(value)
                   console.log("message: ", message )
                 }}
+                style={{
+                  width: "100%",
+                  maxWidth: "100%",
+                  height: "100%",
+                  maxHeight: "100%"
+                }}
               >
                 Enter text here...
               </textarea> 
-          </label>      
+          </div>      
         </div>
-        <div>
+        <div
+          style={{
+            height: "4vh",
+            // maxHeight: "45vh",
+            margin: "5px 0"
+          }}>
             <input type="submit"
-              value="Submit"
+            value="Submit"
+            style={{
+              width: "100%",
+              margin: "8px 0 0 3px",
+              height: "100%"
+            }}
           />         
         </div>
           </form>
