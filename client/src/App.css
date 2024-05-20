@@ -4,6 +4,8 @@
   align-items: center;
   background-color: #f7f9fb;
   height: 100vh;
+  flex-direction: column;
+
 }
 
 .form-div{

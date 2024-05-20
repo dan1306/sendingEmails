@@ -30,8 +30,20 @@ function App() {
   }
 
   return (
+    <>
+      <div  style={{
+  textAlign: "center",  // Center aligns the text horizontally
+  alignItems: "center", // Aligns the items vertically (this is for flexbox, but is not needed here)
+}}>
+        <h1>
+          Send email to the account
+        </h1>
+        <p>
+          Don't forget to subscribe 👍
+        </p>
+      </div>
+    <div className="form-div">
 
-      <div  className="form-div">
 
       <form onSubmit={handleSendEmail}>
         <div>
@@ -134,6 +146,7 @@ function App() {
         </div>
           </form>
         </div>
+    </>
   )
 }
 
