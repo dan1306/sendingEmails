@@ -13,7 +13,7 @@ function App() {
     e.preventDefault();
     try {
       const options = {
-        method: "GET",
+        method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
@@ -32,9 +32,9 @@ function App() {
   return (
     <>
       <div  style={{
-  textAlign: "center",  // Center aligns the text horizontally
-  alignItems: "center", // Aligns the items vertically (this is for flexbox, but is not needed here)
-}}>
+        textAlign: "center",  // Center aligns the text horizontally
+        alignItems: "center", // Aligns the items vertically (this is for flexbox, but is not needed here)
+      }}>
         <h1>
           Send email to the account
         </h1>
@@ -94,7 +94,6 @@ function App() {
                   width: "100%",
                   height: "90%",
                   border: "2px solid #d8dadc" /* border width, border style, border color */
-
                 }}
               />
              </div>
